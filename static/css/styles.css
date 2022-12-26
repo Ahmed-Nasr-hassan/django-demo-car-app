@@ -1,0 +1,11 @@
+h1 {
+    color: rgb(1, 60, 92);
+}
+table,th,tr,thead {
+    margin-left: 25% ;
+    font-size: x-large;     
+  }
+  
+body {
+    background-color: rgb(57, 34, 7);
+}

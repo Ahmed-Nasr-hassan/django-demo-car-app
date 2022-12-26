@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Hello Nasr</h1>
+<table border="3px" width="50%">
+    <thead style="color: rgb(62, 25, 1)">
+      <tr align="center">
+        <th  width="25%" >Name</th>
+        <th width="25%" >Price</th>
+        <th width="25%" >Model</th>
+        <th width="25%" >Image</th>
+      </tr>
+    </thead>
+
+
+    {%for car in cars %}
+
+
+    <tbody style="color: rgb(1, 90, 46)">
+      <tr align="center">
+        <td>  {{ car.name }}  </td>
+        <td>  {{ car.price }}  </td>
+        <td>  {{ car.model }}  </td>
+        <td>  <img src="{{ car.image.url }}" width="150px" height="100px">  </td>
+      </tr>
+    </tbody>
+
+
+{%endfor%}
+</table>
+
+
+{% endblock %}
+
+
+  
