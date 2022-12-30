@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  django-car-app:
+    container_name: nasr-app-container
+    image: nasr-django-car-app-image 
+    ports:
+      - "8000:8000"
+  
+
+
